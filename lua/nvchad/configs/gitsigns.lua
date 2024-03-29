@@ -20,6 +20,10 @@ local options = {
     map("n", "<leader>rh", gs.reset_hunk, opts "Reset Hunk")
     map("n", "<leader>ph", gs.preview_hunk, opts "Preview Hunk")
     map("n", "<leader>gb", gs.blame_line, opts "Blame Line")
+
+    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+    map({'o', 'x'}, 'ah', ':<C-U>Gitsigns select_hunk<CR>')
+
   end,
 }
 
